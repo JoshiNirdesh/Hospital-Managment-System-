@@ -2,12 +2,13 @@ import React from "react";
 import Home from "./pages/Home";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import HotelCard from "./components/HotelCard";
 
 const App = () => {
-  const isOwnerPath = useLocation().pathname.includes("owner")
+  const isOwnerPath = useLocation().pathname.includes("owner");
   return (
     <>
-      {!isOwnerPath &&<Navbar />}
+      {!isOwnerPath && <Navbar />}
 
       <Routes>
         <Route path="/" element={<Home />}></Route>

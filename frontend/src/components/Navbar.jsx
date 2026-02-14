@@ -15,9 +15,11 @@ const Navbar = () => {
 
   return (
     <div className=" w-full h-[77px] flex items-center fixed text-white ">
-      <nav className="flex items-center justify-between px-4 sm:px-6 md:px-12 lg:px-16 w-full">
+      <nav
+        className={`flex items-center justify-between px-8 sm:px-10 md:px-16 lg:px-20 w-full `}
+      >
         <div>
-          <img src={assets.logo} alt="" />
+          <img src={assets.logo} alt="" className="text-black" />
         </div>
         <ul className="hidden md:flex items-center gap-10 sm:h-9 md:h-10 ">
           <li>Home</li>
