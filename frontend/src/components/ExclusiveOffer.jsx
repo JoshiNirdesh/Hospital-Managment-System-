@@ -4,11 +4,11 @@ import { assets, exclusiveOffers } from "../assets/assets";
 
 const ExclusiveOffer = () => {
   return (
-    <div className="px-8 sm:px-10 md:px-16 lg:px-20 mb-25">
-      <div className="flex items-center justify-between">
-        <div className={`flex flex-col  justify-center text-left`}>
+    <div className="px-8 sm:px-10 md:px-16 lg:px-20 mb-25 ">
+      <div className="flex items-center justify-between mt-20 ">
+        <div className={`flex flex-col  justify-center text-left `}>
           <h1 className="text-left text-4xl font-playfair mt-20 ">
-            Exclusive Offers{" "}
+            Exclusive Offers
           </h1>
           <p className=" mt-3 w-130 text-gray-400 text-sm font">
             Take advantage of our limited-time offers and special packages to
