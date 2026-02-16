@@ -12,10 +12,9 @@ const Home = () => {
     <>
       <Hero />
       <FeaturedHotel />
-      <ExclusiveOffer/>
-      <Testimonials/>
-      <NewsLetter/>
-      <Footer/>
+      <ExclusiveOffer />
+      <Testimonials />
+      <NewsLetter />
     </>
   );
 };

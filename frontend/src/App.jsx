@@ -3,6 +3,8 @@ import Home from "./pages/Home";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HotelCard from "./components/HotelCard";
+import AllRoom from "./pages/AllRoom";
+import Footer from "./components/Footer";
 
 const App = () => {
   const isOwnerPath = useLocation().pathname.includes("owner");
@@ -12,7 +14,9 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/room" element={<AllRoom/>}/>
       </Routes>
+      {!isOwnerPath && <Footer/>}
     </>
   );
 };

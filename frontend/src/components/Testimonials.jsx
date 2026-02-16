@@ -25,7 +25,7 @@ const Testimonials = () => {
                 </p>
               </div>
             </div>
-            <div className="flex gap-2">
+            <div className="flex gap-2 mt-5">
               <StarRating rating={item.rating} />
             </div>
             <p className="text-gray-400 mt-5 ">{item.review}</p>

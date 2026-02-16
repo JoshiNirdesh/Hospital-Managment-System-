@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { assets } from "../assets/assets";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,18 +17,18 @@ const Navbar = () => {
   return (
     <div className=" w-full h-[77px] flex items-center fixed text-white ">
       <nav
-        className={`flex items-center justify-between px-8 sm:px-10 md:px-16 lg:px-20 w-full ${isScrolled?"bg-white text-black h-[77px]":""}`}
+        className={`flex items-center justify-between px-8 sm:px-10 md:px-16 lg:px-20 w-full bg-white text-black h-[77px]`}
       >
         <div>
-          <img src={`${isScrolled?assets.logoblack:assets.logo}`} alt="" className="text-black" />
+          <img src={assets.logoblack} alt="" className="text-black" />
         </div>
         <ul className="hidden md:flex items-center gap-10 sm:h-9 md:h-10 ">
-          <li>Home</li>
-          <li>Hotels</li>
-          <li>Experiences</li>
-          <li>About</li>
+          <Link to="/">Home</Link>
+          <Link to="/room">Hotels</Link>
+          <Link>Experiences</Link>
+          <Link>About</Link>
         </ul>
-        <div className="hidden md:flex items-center gap-5 ">
+        <div className="hidden md:flex items-center gap-8 ">
           <img src={assets.searchIcon} alt="" />
           <img src={assets.userIcon} alt="" />
           <button className="bg-black px-7 text-sm py-2 rounded-full text-white">
