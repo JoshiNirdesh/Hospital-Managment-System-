@@ -132,6 +132,28 @@ const RoomDetail = () => {
             feeling.
           </p>
           <hr className="mt-7 border-gray-200 w-150" />
+
+          <div>
+            <div className="mt-7 flex items-center gap-2">
+              <img
+                src={room.hotel.owner.image}
+                alt=""
+                className="w-20 rounded-full"
+              />
+              <div>
+                <h3> Hosted By {room.hotel.owner.username}</h3>
+                <div className="flex gap-7 mt-1">
+                  <div className="flex gap-2">
+                    <StarRating />
+                    <p>200 +reviews </p>
+                  </div>
+                  <p>Response rate: 100%</p>
+                  <p>Response time: 30min</p>
+                </div>
+              </div>
+            </div>
+            <button className="bg-blue-600 mt-3 px-10 py-2 text-white mb-20">Contact Now</button>
+          </div>
         </div>
       </div>
     )
