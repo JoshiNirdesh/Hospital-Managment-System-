@@ -22,7 +22,7 @@ const AllRoom = () => {
                 <img
                   src={room.images[0]}
                   alt=""
-                  className="w-100 rounded-lg"
+                  className="w-100 rounded-lg cursor-pointer"
                   onClick={() => {
                     navigate(`/room/${room._id}`);
                     scrollTo(0, 0);
@@ -33,12 +33,11 @@ const AllRoom = () => {
                   <p className="font-light text-gray-500">{room.hotel.city}</p>
 
                   <h2
-                    className="font-playfair text-2xl font-light"
+                    className="font-playfair text-2xl font-light cursor-pointer"
                     onClick={() => {
                       navigate(`/room/${room._id}`);
                       scrollTo(0, 0);
                     }}
-                    
                   >
                     {room.hotel.name}
                   </h2>
