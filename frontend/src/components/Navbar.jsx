@@ -26,7 +26,10 @@ const Navbar = () => {
           <Link to="/about">About</Link>
         </ul>
         <div className="hidden md:flex items-center gap-8 ">
-          <button className="bg-black px-7 text-sm py-2 rounded-full text-white" onClick={()=>navigate("/login")}>
+          <button
+            className="bg-black px-7 text-sm py-2 rounded-full text-white"
+            onClick={() => navigate("/login")}
+          >
             Login
           </button>
         </div>
@@ -41,7 +44,7 @@ const Navbar = () => {
         </div>
       </nav>
       {isMenuOpen && (
-        <div className="md:hidden bg-red-400 fixed top-0 left-0 w-full h-full ">
+        <div className="md:hidden bg-white fixed top-0 left-0 w-full h-full ">
           <img
             src={assets.closeMenu}
             className="fixed right-0 p-4"
@@ -50,7 +53,7 @@ const Navbar = () => {
           />
 
           <div className="px-10 py-20">
-            <ul className="flex flex-col gap-7 text-white text-base w-full items-center ">
+            <ul className="flex flex-col gap-7 text-black text-base w-full items-center ">
               <li>Home</li>
               <li>Hotels</li>
               <li>Experiences</li>
