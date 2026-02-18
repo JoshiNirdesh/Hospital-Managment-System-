@@ -9,17 +9,20 @@ const Navbar = () => {
   return (
     <div className=" w-full h-[77px] flex items-center fixed text-white  z-10">
       <nav
-        className={`flex items-center justify-between px-8 sm:px-10 md:px-16 lg:px-20 w-full bg-white text-black h-[77px] border border-gray-300 shadow-lg`}
+        className={`flex items-center justify-between px-8 sm:px-10 md:px-14 lg:px-20 w-full bg-white text-black h-[77px] border border-gray-300 shadow-lg`}
       >
         <div>
           <img
             src={assets.logoblack}
             alt=""
-            className="text-black cursor-pointer"
-            onClick={() => navigate("/")}
+            className="text-black cursor-pointer md:w-30"
+            onClick={() => {
+              navigate("/");
+              scrollTo(0, 0);
+            }}
           />
         </div>
-        <ul className="hidden md:flex items-center gap-10 sm:h-9 md:h-10 ">
+        <ul className="hidden md:flex items-center gap-10 sm:h-9 md:h-10 md:text-sm ">
           <Link to="/">Home</Link>
           <Link to="/room">Hotels</Link>
           <Link to="/experience">Experiences</Link>
@@ -27,7 +30,7 @@ const Navbar = () => {
         </ul>
         <div className="hidden md:flex items-center gap-8 ">
           <button
-            className="bg-black px-7 text-sm py-2 rounded-full text-white"
+            className="bg-black px-7 text-sm py-2 md:px-5 md:py-1.5 md:text-xs rounded-full text-white"
             onClick={() => navigate("/login")}
           >
             Login

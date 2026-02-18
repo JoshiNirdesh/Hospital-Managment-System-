@@ -22,7 +22,7 @@ const AllRoom = () => {
                 <img
                   src={room.images[0]}
                   alt=""
-                  className="w-100 rounded-lg cursor-pointer"
+                  className="md:h-80 w-100 rounded-lg cursor-pointer"
                   onClick={() => {
                     navigate(`/room/${room._id}`);
                     scrollTo(0, 0);
@@ -48,24 +48,24 @@ const AllRoom = () => {
                   </div>
 
                   <div className="flex text-sm gap-2 mt-4 mb-4">
-                    <img src={assets.locationIcon} alt="" />
-                    <p className="text-gray-500 font-light">
+                    <img src={assets.locationIcon} alt="" className="md:w-4" />
+                    <p className="text-gray-500 font-light md:text-xs">
                       {room.hotel.address}
                     </p>
                   </div>
 
-                  <div className="flex gap-3">
-                    <div className="flex gap-2 bg-gray-300/40 p-2 text-xs md:text-sm rounded-lg font-light items-center">
+                  <div className="flex md:flex-col gap-3">
+                    <div className="flex gap-2 bg-gray-300/40 p-2 md:p-1 text-xs md:text-md rounded-lg font-light items-center">
                       <img src={assets.freeWifiIcon} alt="" className="w-5" />
                       <p>free wifi</p>
                     </div>
 
-                    <div className="flex gap-2 bg-gray-300/40 p-2 text-xs md:text-sm rounded-lg font-light items-center">
+                    <div className="flex gap-2 bg-gray-300/40 p-2 md:p-1  text-xs md:text-sm rounded-lg font-light items-center">
                       <img src={assets.freeBreakfastIcon} alt="" />
                       <p>free breakfast</p>
                     </div>
 
-                    <div className="flex gap-2 bg-gray-300/40 p-2 text-xs md:text-sm rounded-lg font-light items-center">
+                    <div className="flex gap-2 bg-gray-300/40 p-2 md:p-1  text-xs md:text-sm rounded-lg font-light items-center">
                       <img src={assets.roomServiceIcon} alt="" />
                       <p>room service</p>
                     </div>

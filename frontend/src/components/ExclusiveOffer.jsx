@@ -24,7 +24,7 @@ const ExclusiveOffer = () => {
           />
         </div>
       </div>
-      <div className="grid md:grid-cols-2 md:grid-cols-3 gap-7 rounded-lg mt-15">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7 rounded-lg mt-15">
         {exclusiveOffers.map((item) => (
           <div
             className="group relative flex flex-col items-start  bg-no-repeat bg-cover bg-center rounded-lg text-white px-6 py-4 "

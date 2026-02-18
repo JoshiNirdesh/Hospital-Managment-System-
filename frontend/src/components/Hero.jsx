@@ -20,7 +20,7 @@ const Hero = () => {
         </p>
         <form
           action=""
-          className="hidden md:flex bg-white text-black flex items-center gap-15 px-3 py-2.5 mt-6 rounded-lg"
+          className="hidden md:flex-col-2 bg-white text-black flex items-center md:gap-5 gap-15 px-3 py-2.5 mt-6 rounded-lg"
         >
           <div>
             <div className="flex gap-1 text-sm text-gray-500">
@@ -30,7 +30,7 @@ const Hero = () => {
             <input
               type="text"
               placeholder="Type here"
-              className=" mt-1 px-2 text-sm   rounded-sm"
+              className=" mt-1 px-2 text-sm rounded-sm"
             />
           </div>
 
