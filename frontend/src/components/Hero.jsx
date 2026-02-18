@@ -4,10 +4,10 @@ import { assets } from "../assets/assets";
 const Hero = () => {
   return (
     <div
-      className="flex flex-col items-start justify-center w-full min-h-[80vh] sm:h-screen bg-cover bg-center bg-no-repeat text-white px-4 sm:px-8 md:px-16 lg:px-20"
+      className="relative flex flex-col items-start justify-center w-full min-h-[80vh] sm:h-screen bg-cover bg-no-repeat text-white px-4 sm:px-8 md:px-16 lg:px-20 before:absolute before:inset-0 before:bg-black/20 before:content-['']"
       style={{ backgroundImage: `url(${heroImage})` }}
     >
-      <div className="px-8 sm:px-10 md:px-16 lg:px-20">
+      <div className="px-8 sm:px-10 md:px-16 lg:px-20 z-10">
         <p className="bg-[#49B9FF80]/50  px-2 py-1 md:px-4 rounded-full text-sm md:text-lg mt-20 w-55 md:w-70">
           The Ultimate Hotel Experience
         </p>
