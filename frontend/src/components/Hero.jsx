@@ -4,14 +4,14 @@ import { assets } from "../assets/assets";
 const Hero = () => {
   return (
     <div
-      className=" flex flex-col items-start justify-center w-full h-screen bg-cover bg-center h-screen bg-no-repeat  text-white"
+      className="flex flex-col items-start justify-center w-full min-h-[80vh] sm:h-screen bg-cover bg-center bg-no-repeat text-white px-4 sm:px-8 md:px-16 lg:px-20"
       style={{ backgroundImage: `url(${heroImage})` }}
     >
       <div className="px-8 sm:px-10 md:px-16 lg:px-20">
-        <p className="bg-[#49B9FF80]/50 px-4 py-1 rounded-full text-lg mt-20 w-70">
+        <p className="bg-[#49B9FF80]/50  px-2 py-1 md:px-4 rounded-full text-sm md:text-lg mt-20 w-55 md:w-70">
           The Ultimate Hotel Experience
         </p>
-        <h1 className="font-playfair text-2xl md:text-5xl font-medium md:font-extrabold max-w-xl mt-4">
+        <h1 className="font-playfair text-3xl font-extrabold md:text-5xl font-medium md:font-extrabold max-w-xl mt-4">
           Discover Your Perfect Gateway Destination
         </h1>
         <p className="text-sm mt-4 max-w-xl">
@@ -20,7 +20,7 @@ const Hero = () => {
         </p>
         <form
           action=""
-          className="bg-white text-black flex items-center gap-15 px-3 py-2.5 mt-6 rounded-lg"
+          className="hidden md:flex bg-white text-black flex items-center gap-15 px-3 py-2.5 mt-6 rounded-lg"
         >
           <div>
             <div className="flex gap-1 text-sm text-gray-500">

@@ -56,11 +56,6 @@ const Footer = () => {
               Subscribe to our newsletter for travel inspiration and special
               offers.
             </p>
-            <input
-              type="text"
-              placeholder="Your email"
-              className="bg-white px-4 py-1 border border-gray-300 w-60 mt-10 rounded"
-            />
           </div>
         </div>
         <hr className="w-full mt-10 border-gray-300 mb-5" />

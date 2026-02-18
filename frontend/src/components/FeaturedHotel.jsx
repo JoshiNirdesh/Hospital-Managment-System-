@@ -16,7 +16,7 @@ const FeaturedHotel = () => {
           }
         />
 
-        <div className="grid grid-cols-4 px-8 sm:px-10 md:px-16 lg:px-20 ">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 px-8 sm:px-10 md:px-16 lg:px-20 ">
           {roomsDummyData.slice(0, 5).map((room, index) => (
             <HotelCard room={room} key={index} />
           ))}

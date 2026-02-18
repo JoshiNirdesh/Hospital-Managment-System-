@@ -5,7 +5,7 @@ assets;
 const HotelCard = ({ room }) => {
   const navigate = useNavigate();
   return (
-    <div className="mt-15 w-full flex items-center justify-center mb-15 ">
+    <div className="mt-15 w-full flex items-center justify-center mb-10 md:mb-15 ">
       <div className="border border-gray-300/20 shadow-lg rounded-lg overflow-hidden w-80 ml-2 ">
         <div className="mb-5">
           <div className="relative">
@@ -13,7 +13,7 @@ const HotelCard = ({ room }) => {
               src={room.images[0]}
               alt=""
               className="w-full overflow-hidden rounded-t-lg cursor-pointer"
-                onClick={() => navigate(`/room/${room._id}`)}
+              onClick={() => navigate(`/room/${room._id}`)}
             />
             <p className="absolute top-0 z-1 text-black m-3 px-2 border border-none rounded-full outline-none text-xs bg-white ">
               Best Seller
