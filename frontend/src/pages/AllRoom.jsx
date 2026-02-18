@@ -18,7 +18,7 @@ const AllRoom = () => {
         <div className="lg:col-span-2">
           {roomsDummyData.map((room, index) => (
             <div key={index}>
-              <div className="mt-7 flex gap-7">
+              <div className="mt-7 flex flex-col md:flex-row gap-7">
                 <img
                   src={room.images[0]}
                   alt=""
@@ -55,17 +55,17 @@ const AllRoom = () => {
                   </div>
 
                   <div className="flex gap-3">
-                    <div className="flex gap-2 bg-gray-300/40 p-2 text-sm rounded-lg font-light items-center">
+                    <div className="flex gap-2 bg-gray-300/40 p-2 text-xs md:text-sm rounded-lg font-light items-center">
                       <img src={assets.freeWifiIcon} alt="" className="w-5" />
                       <p>free wifi</p>
                     </div>
 
-                    <div className="flex gap-2 bg-gray-300/40 p-2 text-sm rounded-lg font-light items-center">
+                    <div className="flex gap-2 bg-gray-300/40 p-2 text-xs md:text-sm rounded-lg font-light items-center">
                       <img src={assets.freeBreakfastIcon} alt="" />
                       <p>free breakfast</p>
                     </div>
 
-                    <div className="flex gap-2 bg-gray-300/40 p-2 text-sm rounded-lg font-light items-center">
+                    <div className="flex gap-2 bg-gray-300/40 p-2 text-xs md:text-sm rounded-lg font-light items-center">
                       <img src={assets.roomServiceIcon} alt="" />
                       <p>room service</p>
                     </div>

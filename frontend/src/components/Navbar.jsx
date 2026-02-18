@@ -44,7 +44,7 @@ const Navbar = () => {
         </div>
       </nav>
       {isMenuOpen && (
-        <div className="md:hidden bg-white fixed top-0 left-0 w-full h-full ">
+        <div className="md:hidden bg-white fixed top-0 left-0 w-full h-100 ">
           <img
             src={assets.closeMenu}
             className="fixed right-0 p-4"
@@ -54,12 +54,45 @@ const Navbar = () => {
 
           <div className="px-10 py-20">
             <ul className="flex flex-col gap-7 text-black text-base w-full items-center ">
-              <li>Home</li>
-              <li>Hotels</li>
-              <li>Experiences</li>
-              <li>About</li>
+              <Link to="/" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                Home
+              </Link>
+              <Link
+                to="/room"
+                onClick={() => {
+                  setIsMenuOpen(!isMenuOpen);
+                  scrollTo(0, 0);
+                }}
+              >
+                Hotels
+              </Link>
+              <Link
+                to="/experience"
+                onClick={() => {
+                  setIsMenuOpen(!isMenuOpen);
+                  scrollTo(0, 0);
+                }}
+              >
+                Experiences
+              </Link>
+              <Link
+                to="/about"
+                onClick={() => {
+                  setIsMenuOpen(!isMenuOpen);
+                  scrollTo(0, 0);
+                }}
+              >
+                About
+              </Link>
               <li>
-                <button className="w-30 bg-black py-2 rounded-full text-white">
+                <button
+                  onClick={() => {
+                    navigate("/login");
+                    setIsMenuOpen(!isMenuOpen);
+                    scrollTo(0, 0);
+                  }}
+                  className="w-30 bg-black py-2 rounded-full text-white"
+                >
                   Login
                 </button>
               </li>

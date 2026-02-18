@@ -10,7 +10,7 @@ const Testimonials = () => {
         title="What Our Guest Say"
         subtitle="Discover why discerning travelers choose QuickStay for their luxury accommodations around the world."
       />
-      <div className="grid grid-cols-3 px-8 sm:px-10 md:px-16 lg:px-20  mt-20 gap-4  ">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 px-8 sm:px-10 md:px-16 lg:px-20  mt-20 gap-4  ">
         {testimonials.map((item) => (
           <div
             className="border border-gray-300/20 shadow-lg rounded-lg bg-white p-8 mb-25"
